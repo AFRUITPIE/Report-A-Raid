@@ -7,4 +7,5 @@ target 'reportaraid' do
 
   # Pods for reportaraid
   pod 'Firebase/Core'
+  pod 'Pastel'
 end

@@ -12,7 +12,9 @@
 		CF14452321EA624B0004129A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF14452121EA624B0004129A /* Main.storyboard */; };
 		CF14452521EA624C0004129A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF14452421EA624C0004129A /* Assets.xcassets */; };
 		CF14452821EA624C0004129A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF14452621EA624C0004129A /* LaunchScreen.storyboard */; };
-		CF14453021EA63320004129A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF14452F21EA63320004129A /* GoogleService-Info.plist */; };
+		CF52389621EA6B85000E5B07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF52389521EA6B85000E5B07 /* GoogleService-Info.plist */; };
+		CF52389821EA6BA0000E5B07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF52389721EA6BA0000E5B07 /* GoogleService-Info.plist */; };
+		CF52389C21EA70D0000E5B07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52389B21EA70D0000E5B07 /* LoginViewController.swift */; };
 		D4ADF08BAE865443A498A124 /* Pods_reportaraid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9709C444816FA0862567C6E6 /* Pods_reportaraid.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +29,9 @@
 		CF14452421EA624C0004129A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF14452721EA624C0004129A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF14452921EA624C0004129A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF14452F21EA63320004129A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF52389521EA6B85000E5B07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF52389721EA6BA0000E5B07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF52389B21EA70D0000E5B07 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,13 +84,15 @@
 		CF14451C21EA624B0004129A /* reportaraid */ = {
 			isa = PBXGroup;
 			children = (
-				CF14452F21EA63320004129A /* GoogleService-Info.plist */,
+				CF52389521EA6B85000E5B07 /* GoogleService-Info.plist */,
+				CF52389721EA6BA0000E5B07 /* GoogleService-Info.plist */,
 				CF14451D21EA624B0004129A /* AppDelegate.swift */,
 				CF14451F21EA624B0004129A /* ViewController.swift */,
 				CF14452121EA624B0004129A /* Main.storyboard */,
 				CF14452421EA624C0004129A /* Assets.xcassets */,
 				CF14452621EA624C0004129A /* LaunchScreen.storyboard */,
 				CF14452921EA624C0004129A /* Info.plist */,
+				CF52389B21EA70D0000E5B07 /* LoginViewController.swift */,
 			);
 			path = reportaraid;
 			sourceTree = "<group>";
@@ -152,7 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF14452821EA624C0004129A /* LaunchScreen.storyboard in Resources */,
-				CF14453021EA63320004129A /* GoogleService-Info.plist in Resources */,
+				CF52389621EA6B85000E5B07 /* GoogleService-Info.plist in Resources */,
+				CF52389821EA6BA0000E5B07 /* GoogleService-Info.plist in Resources */,
 				CF14452521EA624C0004129A /* Assets.xcassets in Resources */,
 				CF14452321EA624B0004129A /* Main.storyboard in Resources */,
 			);
@@ -171,6 +178,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-reportaraid/Pods-reportaraid-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -178,6 +186,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF52389C21EA70D0000E5B07 /* LoginViewController.swift in Sources */,
 				CF14452021EA624B0004129A /* ViewController.swift in Sources */,
 				CF14451E21EA624B0004129A /* AppDelegate.swift in Sources */,
 			);
