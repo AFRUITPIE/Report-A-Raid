@@ -8,6 +8,7 @@
 import UIKit
 import Foundation
 import Pastel
+import UserNotifications
 
 class LoginViewController: UIViewController {
     @IBOutlet var SomeView: UIView!
@@ -38,6 +39,14 @@ class LoginViewController: UIViewController {
         
         pastelView.startAnimation()
         view.insertSubview(pastelView, at: 0)
+        
+        // Request permission to display alerts and play sounds.
+        let center = UNUserNotificationCenter.current()
+        // Request permission to display alerts and play sounds.
+        center.requestAuthorization(options: [.alert, .sound])
+        { (granted, error) in
+            // Do nothing, this is okay lol
+        }
     }
     
     // Set the status bar to white
