@@ -15,6 +15,8 @@
 		CF52389621EA6B85000E5B07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF52389521EA6B85000E5B07 /* GoogleService-Info.plist */; };
 		CF52389821EA6BA0000E5B07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF52389721EA6BA0000E5B07 /* GoogleService-Info.plist */; };
 		CF52389C21EA70D0000E5B07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52389B21EA70D0000E5B07 /* LoginViewController.swift */; };
+		CF5AE67721EAC7930037EB77 /* vitalInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF5AE67621EAC7920037EB77 /* vitalInfo.png */; };
+		CF5AE67921EAC7E00037EB77 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5AE67821EAC7E00037EB77 /* InfoViewController.swift */; };
 		D4ADF08BAE865443A498A124 /* Pods_reportaraid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9709C444816FA0862567C6E6 /* Pods_reportaraid.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		CF52389521EA6B85000E5B07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF52389721EA6BA0000E5B07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF52389B21EA70D0000E5B07 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF5AE67621EAC7920037EB77 /* vitalInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vitalInfo.png; sourceTree = "<group>"; };
+		CF5AE67821EAC7E00037EB77 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				CF14452421EA624C0004129A /* Assets.xcassets */,
 				CF14452621EA624C0004129A /* LaunchScreen.storyboard */,
 				CF14452921EA624C0004129A /* Info.plist */,
+				CF5AE67621EAC7920037EB77 /* vitalInfo.png */,
+				CF5AE67821EAC7E00037EB77 /* InfoViewController.swift */,
 				CF52389B21EA70D0000E5B07 /* LoginViewController.swift */,
 			);
 			path = reportaraid;
@@ -157,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5AE67721EAC7930037EB77 /* vitalInfo.png in Resources */,
 				CF14452821EA624C0004129A /* LaunchScreen.storyboard in Resources */,
 				CF52389621EA6B85000E5B07 /* GoogleService-Info.plist in Resources */,
 				CF52389821EA6BA0000E5B07 /* GoogleService-Info.plist in Resources */,
@@ -241,6 +248,7 @@
 			files = (
 				CF52389C21EA70D0000E5B07 /* LoginViewController.swift in Sources */,
 				CF14452021EA624B0004129A /* ViewController.swift in Sources */,
+				CF5AE67921EAC7E00037EB77 /* InfoViewController.swift in Sources */,
 				CF14451E21EA624B0004129A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
