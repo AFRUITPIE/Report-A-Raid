@@ -17,6 +17,10 @@
 		CF52389C21EA70D0000E5B07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52389B21EA70D0000E5B07 /* LoginViewController.swift */; };
 		CF5AE67721EAC7930037EB77 /* vitalInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF5AE67621EAC7920037EB77 /* vitalInfo.png */; };
 		CF5AE67921EAC7E00037EB77 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5AE67821EAC7E00037EB77 /* InfoViewController.swift */; };
+		CF5AE67B21EAD2760037EB77 /* loginInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = CF5AE67A21EAD2750037EB77 /* loginInfo.png */; };
+		CF5AE68121EAD5E50037EB77 /* baseline_videocam_black_18dp.png in Resources */ = {isa = PBXBuildFile; fileRef = CF5AE68021EAD5E40037EB77 /* baseline_videocam_black_18dp.png */; };
+		CF5AE68321EAD5F80037EB77 /* baseline_folder_black_18dp.png in Resources */ = {isa = PBXBuildFile; fileRef = CF5AE68221EAD5F70037EB77 /* baseline_folder_black_18dp.png */; };
+		CF5AE68521EAD9960037EB77 /* disclaimer.png in Resources */ = {isa = PBXBuildFile; fileRef = CF5AE68421EAD9960037EB77 /* disclaimer.png */; };
 		D4ADF08BAE865443A498A124 /* Pods_reportaraid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9709C444816FA0862567C6E6 /* Pods_reportaraid.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,10 @@
 		CF52389B21EA70D0000E5B07 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CF5AE67621EAC7920037EB77 /* vitalInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vitalInfo.png; sourceTree = "<group>"; };
 		CF5AE67821EAC7E00037EB77 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		CF5AE67A21EAD2750037EB77 /* loginInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginInfo.png; sourceTree = "<group>"; };
+		CF5AE68021EAD5E40037EB77 /* baseline_videocam_black_18dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_videocam_black_18dp.png; sourceTree = "<group>"; };
+		CF5AE68221EAD5F70037EB77 /* baseline_folder_black_18dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_folder_black_18dp.png; sourceTree = "<group>"; };
+		CF5AE68421EAD9960037EB77 /* disclaimer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclaimer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 				CF5AE67621EAC7920037EB77 /* vitalInfo.png */,
 				CF5AE67821EAC7E00037EB77 /* InfoViewController.swift */,
 				CF52389B21EA70D0000E5B07 /* LoginViewController.swift */,
+				CF5AE68021EAD5E40037EB77 /* baseline_videocam_black_18dp.png */,
+				CF5AE68221EAD5F70037EB77 /* baseline_folder_black_18dp.png */,
+				CF5AE68421EAD9960037EB77 /* disclaimer.png */,
+				CF5AE67A21EAD2750037EB77 /* loginInfo.png */,
 			);
 			path = reportaraid;
 			sourceTree = "<group>";
@@ -163,11 +175,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5AE68321EAD5F80037EB77 /* baseline_folder_black_18dp.png in Resources */,
+				CF5AE67B21EAD2760037EB77 /* loginInfo.png in Resources */,
 				CF5AE67721EAC7930037EB77 /* vitalInfo.png in Resources */,
+				CF5AE68121EAD5E50037EB77 /* baseline_videocam_black_18dp.png in Resources */,
 				CF14452821EA624C0004129A /* LaunchScreen.storyboard in Resources */,
 				CF52389621EA6B85000E5B07 /* GoogleService-Info.plist in Resources */,
 				CF52389821EA6BA0000E5B07 /* GoogleService-Info.plist in Resources */,
 				CF14452521EA624C0004129A /* Assets.xcassets in Resources */,
+				CF5AE68521EAD9960037EB77 /* disclaimer.png in Resources */,
 				CF14452321EA624B0004129A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

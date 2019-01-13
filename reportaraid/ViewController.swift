@@ -11,11 +11,14 @@ import MapKit
 import Firebase
 import FirebaseFirestore
 
-class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITabBarDelegate {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var disclaimer: UIImageView!
+    @IBOutlet weak var tabBar: UITabBar!
+    @IBOutlet weak var reportButton: UITabBarItem!
     
     private var locationManager: CLLocationManager!
     private var currentLocation: CLLocation?
@@ -23,11 +26,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tabBar.delegate = self
+        
         // Location related stuff
         locationManager = CLLocationManager()
         locationManager.delegate = self as CLLocationManagerDelegate
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        mapView.delegate = self 
+        mapView.delegate = self
 
         // Check for Location Services
         if CLLocationManager.locationServicesEnabled() {
@@ -104,6 +109,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         renderer.strokeColor = UIColor.blue
         renderer.lineWidth = 5.0
         return renderer
+    }
+    
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if (item.tag == 5) {
+            let alert = UIAlertController(title: "Start recording", message: "INFO HERE", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("No", comment: "Start tracking the user in need"), style: .default, handler: { _ in
+                self.generateDirections()
+            }))
+            
+            alert.addAction(UIAlertAction(title: NSLocalizedString("Yes", comment: "Start tracking the user in need"), style: .default, handler: { _ in
+                self.generateDirections()
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+
+        }
+
     }
 }
 
