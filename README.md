@@ -1,6 +1,8 @@
 # Report-A-Raid
 An application for those not at risk of ICE raids to help those who are at risk - WINFO Hackathon 2018 
 
+## To view video demo of the app, view asdf.mov in the repo
+
 ## Requirements
 A current installation of Xcode with the current version of Cocoapods.
 
